@@ -1,0 +1,67 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@100;200;400;700&display=swap');
+
+:root {
+    --tealBlue: #114659;
+    --puertoRico: #54bcab;
+    --swansDown: #dcf0ed;
+    --pastelOrange: #f9b348;
+}
+
+* {
+    font-family: 'Work Sans', sans-serif;
+}
+
+body {
+    background-color: var(--swansDown) !important;
+}
+p {
+    font-size: 16px;
+}
+
+h2, h5, p {
+    color: var(--tealBlue) !important;
+}
+
+.card-box {
+    
+    margin:20px auto;
+    min-width: 15rem;
+}
+
+.card {
+    background-color: var(--swansDown) !important;
+    margin: auto;
+    width:15rem !important;
+    border: none !important;
+} 
+
+.card-body {
+    padding: 0.75rem 0 !important;
+}
+
+.card img {
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+    height: 200px;
+    object-fit: cover;
+    width: 200px; 
+}
+
+.section-title {
+    font-size:20px;
+    font-weight: 200;
+    margin: 20px !important;
+    width: auto !important;
+}
+
+.team {
+    margin-top:40px;
+}
+
+.carousel-item {
+    display: flex;
+}
+
+.carousel-item > .row > .card {
+    margin: 0px;
+}
