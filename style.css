@@ -23,6 +23,49 @@ h2, h5, p {
     color: var(--tealBlue) !important;
 }
 
+.hero {
+    position: relative;
+    background-color: var(--tealBlue);
+    z-index: -1;
+    margin-bottom: 50px;
+}
+
+.hero:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 58%;
+    overflow: visible;
+    width: 100%;
+    height: 500px;
+    background: var(--swansDown);
+    z-index: -1;
+    -webkit-transform: skewY(-16deg);
+    -moz-transform: skewY(-16deg);
+    -ms-transform: skewY(-16deg);
+    -o-transform: skewY(-16deg);
+    transform: skewY(-16deg);
+    -webkit-backface-visibility: hidden;
+    backface-visibility: initial;
+}
+
+.hero-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.hero-text h1,
+.hero-text p {
+    color: #fff !important;
+    padding: auto 3000px !important;
+}
+
+.underTitle {
+    border: 2px solid var(--pastelOrange);
+    opacity: 1 !important;
+    max-width: 10rem;
+}
 .card-box {
     
     margin:20px auto;
@@ -47,11 +90,27 @@ h2, h5, p {
     width: 200px; 
 }
 
-.section-title {
+h2 {
+    display: flex;
+    flex-direction: row;
     font-size:20px;
     font-weight: 200;
-    margin: 20px !important;
-    width: auto !important;
+  }
+  h2:before, h2:after{
+    content: "";
+    flex: 1 1;
+    border-bottom: 1px solid;
+    margin: auto;
+  }
+  h2:before {
+    margin-right: 10px
+  }
+  h2:after {
+    margin-left: 10px
+  }
+
+.span {
+    background-color: blue !important;
 }
 
 .team {
