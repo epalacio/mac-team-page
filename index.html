@@ -10,11 +10,6 @@
     <!-- CSS Links -->
     <link rel="stylesheet" href="style.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
-    <script>
-        const myCarousel = document.querySelector('#myCarousel');
-        const carousel = new bootstrap.Carousel(myCarousel, {interval: 10000, wrap: false});
-    </script>
-
 </head>
 <body>
     
@@ -40,12 +35,12 @@
                 <h2 class="section-title">LEADERSHIP</h2>
             </div>
             <div class="row">
-                <div class="card-box col-12 col-sm-6 col-md-2">
+                <div class="card-box col-12 col-sm-6 col-md-2" onclick="openModal();currentSlide(1)">
                     <div class="card">
-                        <img class="card-img-top" src="./images/woman1.jpg" alt="Card image cap">
+                        <img class="card-img-top" src="./images/jordanH.jpg" alt="Profile Picture of Jordan Hellyer" style="cursor: pointer;">
                         <div class="card-body">
-                          <h5 class="card-title">Amy</h5>
-                          <p class="card-text">CEO & Founder</p>
+                          <h5 class="card-title">Jordan Hellyer</h5>
+                          <p class="card-text">President</p>
                         </div>
                     </div>
                 </div>
@@ -58,22 +53,22 @@
                         </div>
                     </div> -->
                 </div>
-                <div class="card-box col-12 col-sm-6 col-md-2">
+                <div class="card-box col-12 col-sm-6 col-md-2" onclick="openModal();currentSlide(2)">
                     <div class="card">
-                        <img class="card-img-top" src="./images/man1.jpg" alt="Card image cap">
+                        <img class="card-img-top" src="./images/katelynR.jpg" alt="Profile Picture of Katelyn Reischke" style="cursor: pointer;">
                         <div class="card-body">
-                          <h5 class="card-title">John</h5>
-                          <p class="card-text">VP Sales</p>
+                          <h5 class="card-title">Katelyn Reischke</h5>
+                          <p class="card-text">VP Marketing & Operations</p>
                         </div>
                     </div>
                 </div>
 
-                <div class="card-box col-12 col-sm-6 col-md-2">
+                <div class="card-box col-12 col-sm-6 col-md-2" onclick="openModal();currentSlide(3)">
                     <div class="card">
-                        <img class="card-img-top" src="./images/woman3.jpg" alt="Card image cap">
+                        <img class="card-img-top" src="./images/joshG.jpg" alt="Profile Pictue of Josh Gilchrist" style="cursor: pointer;">
                         <div class="card-body">
-                          <h5 class="card-title">Jackie</h5>
-                          <p class="card-text">VP Operations</p>
+                          <h5 class="card-title">Josh Gilchrist</h5>
+                          <p class="card-text">VP Sales & Strategy</p>
                         </div>
                     </div>
                 </div>
@@ -81,39 +76,39 @@
             <div class="row">
                 <div class="card-box col-12 col-sm-6 col-md-2">
                     <div class="card">
-                        <img class="card-img-top" src="./images/man3.jpg" alt="Card image cap">
+                        <img class="card-img-top" src="./images/woman1.jpg" alt="Card image cap">
                         <div class="card-body">
-                          <h5 class="card-title">Frederic</h5>
-                          <p class="card-text">CTO</p>
+                          <h5 class="card-title">Diane Baiao</h5>
+                          <p class="card-text">Salesforce Solutions Architect</p>
                         </div>
                     </div>
                 </div>
                 <div class="card-box col-12 col-sm-6 col-md-2">
                     <div class="card">
-                        <img class="card-img-top" src="./images/woman2.jpg" alt="Card image cap">
+                        <img class="card-img-top" src="./images/gonpinashG.jpg" alt="Card image cap">
                         <div class="card-body">
-                          <h5 class="card-title">Amelia</h5>
+                          <h5 class="card-title">Gopinath Ganesan</h5>
+                          <p class="card-text">Marketing Solutions Architect (Hubspot)</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card-box col-12 col-sm-6 col-md-2">
+                    <div class="card">
+                        <img class="card-img-top" src="./images/floranceD.jpg" alt="Card image cap">
+                        <div class="card-body">
+                          <h5 class="card-title">Florance D'Souza</h5>
+                          <p class="card-text">Marketing Solutions Architect (Marketo)</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card-box col-12 col-sm-6 col-md-2">
+                    <div class="card">
+                        <img class="card-img-top" src="./images/kaitlynF.jpg" alt="Card image cap">
+                        <div class="card-body">
+                          <h5 class="card-title">Kaitlyn Fazari</h5>
                           <p class="card-text">Creative Director</p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="card-box col-12 col-sm-6 col-md-2">
-                    <div class="card">
-                        <img class="card-img-top" src="./images/woman6.jpg" alt="Card image cap">
-                        <div class="card-body">
-                          <h5 class="card-title">Sandra</h5>
-                          <p class="card-text">VP Communications</p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="card-box col-12 col-sm-6 col-md-2">
-                    <div class="card">
-                        <img class="card-img-top" src="./images/man4.jpg" alt="Card image cap">
-                        <div class="card-body">
-                          <h5 class="card-title">James</h5>
-                          <p class="card-text">Media</p>
                         </div>
                     </div>
                 </div>
@@ -121,6 +116,37 @@
                 
             </div>
         </section>
+
+        <!-- Leadership Lightbox -->
+
+        
+        <!-- The Modal/Lightbox -->
+        <div id="myModal" class="modal">
+            <span class="close cursor button-close-modal" onclick="closeModal()">&times;</span>
+            <div class="modal-content">
+        
+            <div class="mySlides modalCard">
+                <img src="/images/jordanH.jpg" style="width:40%">
+                <h2 class="section-title">Jordan Hellyer</h2>
+                <h4>President</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam lobortis consequat ex id maximus. Integer pulvinar vitae nisl ut interdum. Nullam sed risus sem. Duis vulputate varius magna vel pellentesque. Proin sed odio nisl. Fusce eu ultrices metus. Etiam posuere nec orci eu vestibulum.</p>
+            </div>
+        
+            <div class="mySlides modalCard">
+                <img src="/images/katelynR.jpg" style="width:40%">
+                <h2>Katelyn Reischke</h2>
+                <h4>VP Marketing & Operations</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam lobortis consequat ex id maximus. Integer pulvinar vitae nisl ut interdum. Nullam sed risus sem. Duis vulputate varius magna vel pellentesque. Proin sed odio nisl. Fusce eu ultrices metus. Etiam posuere nec orci eu vestibulum.</p>
+            </div>
+        
+            <div class="mySlides modalCard">
+                <img src="/images/joshG.jpg" style="width:40%">
+                <h2>Josh Gilchrist</h2>
+                <h4>VP Sales & Strategy</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam lobortis consequat ex id maximus. Integer pulvinar vitae nisl ut interdum. Nullam sed risus sem. Duis vulputate varius magna vel pellentesque. Proin sed odio nisl. Fusce eu ultrices metus. Etiam posuere nec orci eu vestibulum.</p>
+            </div>
+        </div>
+        </div>
 
         <!-- Our Team -->
         <section class="container team">
@@ -134,10 +160,10 @@
                     <div class="row">
                         <div class="card-box col-12 col-sm-6 col-md-2">
                             <div class="card team-card">
-                                <img class="card-img-top" src="./images/woman3.jpg" alt="Card image cap">
+                                <img class="card-img-top" src="./images/man2.jpg" alt="Card image cap">
                                 <div class="card-body">
-                                  <h5 class="card-title">Mary</h5>
-                                  <p class="card-text">Position</p>
+                                  <h5 class="card-title">Sean Roberge</h5>
+                                  <p class="card-text">Marketing Solutions Architect, Strategic Projects</p>
                                 </div>
                             </div>
                         </div>
@@ -145,8 +171,8 @@
                             <div class="card team-card">
                                 <img class="card-img-top" src="./images/man3.jpg" alt="Card image cap">
                                 <div class="card-body">
-                                  <h5 class="card-title">James</h5>
-                                  <p class="card-text">Position</p>
+                                  <h5 class="card-title">Jeff Stiles</h5>
+                                  <p class="card-text">Marketing Solutions Architect, Strategic Projects</p>
                                 </div>
                             </div>
                         </div>
@@ -155,8 +181,8 @@
                             <div class="card team-card">
                                 <img class="card-img-top" src="./images/woman4.jpg" alt="Card image cap">
                                 <div class="card-body">
-                                  <h5 class="card-title">Allie</h5>
-                                  <p class="card-text">Position</p>
+                                  <h5 class="card-title">Krishna Vijayendra</h5>
+                                  <p class="card-text">Marketing Solutions Architect, Strategic Projects</p>
                                 </div>
                             </div>
                         </div>
@@ -165,8 +191,8 @@
                             <div class="card team-card">
                                 <img class="card-img-top" src="./images/man4.jpg" alt="Card image cap">
                                 <div class="card-body">
-                                  <h5 class="card-title">Andrew</h5>
-                                  <p class="card-text">Position</p>
+                                  <h5 class="card-title">Zain Merchant</h5>
+                                  <p class="card-text">Senior Marketing Solutions Engineer</p>
                                 </div>
                             </div>
                         </div>
@@ -176,39 +202,39 @@
                     <div class="row">
                         <div class="card-box col-12 col-sm-6 col-md-2">
                             <div class="card team-card">
-                                <img class="card-img-top" src="./images/dog.jpg" alt="Card image cap">
+                                <img class="card-img-top" src="./images/woman1.jpg" alt="Card image cap">
                                 <div class="card-body">
-                                  <h5 class="card-title">Spike</h5>
-                                  <p class="card-text">Position</p>
+                                  <h5 class="card-title">Emily ?</h5>
+                                  <p class="card-text">Business Development</p>
                                 </div>
                             </div>
                         </div>
                         <div class="card-box col-12 col-sm-6 col-md-2">
                             <div class="card team-card">
-                                <img class="card-img-top" src="./images/woman2.jpg" alt="Card image cap">
+                                <img class="card-img-top" src="./images/laminC.jpg" alt="Card image cap">
                                 <div class="card-body">
-                                  <h5 class="card-title">Amelia</h5>
-                                  <p class="card-text">Position</p>
-                                </div>
-                            </div>
-                        </div>
-        
-                        <div class="card-box col-12 col-sm-6 col-md-2">
-                            <div class="card team-card">
-                                <img class="card-img-top" src="./images/man2.jpg" alt="Card image cap">
-                                <div class="card-body">
-                                  <h5 class="card-title">Eduard</h5>
-                                  <p class="card-text">Position</p>
+                                  <h5 class="card-title">Lamin Ceesay</h5>
+                                  <p class="card-text">SFMC Consultant</p>
                                 </div>
                             </div>
                         </div>
         
                         <div class="card-box col-12 col-sm-6 col-md-2">
                             <div class="card team-card">
-                                <img class="card-img-top" src="./images/woman6.jpg" alt="Card image cap">
+                                <img class="card-img-top" src="./images/kayodeA.jpg" alt="Card image cap">
                                 <div class="card-body">
-                                  <h5 class="card-title">Kelly</h5>
-                                  <p class="card-text">Position</p>
+                                  <h5 class="card-title">Kayode Adeniji</h5>
+                                  <p class="card-text">SFMC Consultant</p>
+                                </div>
+                            </div>
+                        </div>
+        
+                        <div class="card-box col-12 col-sm-6 col-md-2">
+                            <div class="card team-card">
+                                <img class="card-img-top" src="./images/kaivalyaK.jpg" alt="Card image cap">
+                                <div class="card-body">
+                                  <h5 class="card-title">KV Kashyap</h5>
+                                  <p class="card-text">Senior Salesforce Solutions Engineer</p>
                                 </div>
                             </div>
                         </div>
@@ -218,10 +244,10 @@
                     <div class="row">
                         <div class="card-box col-12 col-sm-6 col-md-2">
                             <div class="card team-card">
-                                <img class="card-img-top" src="./images/woman2.jpg" alt="Card image cap">
+                                <img class="card-img-top" src="./images/clintC.jpg" alt="Card image cap">
                                 <div class="card-body">
-                                  <h5 class="card-title">Mary</h5>
-                                  <p class="card-text">Position</p>
+                                  <h5 class="card-title">Clint Carvalho</h5>
+                                  <p class="card-text">Senior Salesforce Solutions Engineer</p>
                                 </div>
                             </div>
                         </div>
@@ -229,8 +255,8 @@
                             <div class="card team-card">
                                 <img class="card-img-top" src="./images/man3.jpg" alt="Card image cap">
                                 <div class="card-body">
-                                  <h5 class="card-title">Jackson</h5>
-                                  <p class="card-text">Position</p>
+                                  <h5 class="card-title">Neeraj Kumar</h5>
+                                  <p class="card-text">SFDC Consultant</p>
                                 </div>
                             </div>
                         </div>
@@ -239,8 +265,8 @@
                             <div class="card team-card">
                                 <img class="card-img-top" src="./images/woman6.jpg" alt="Card image cap">
                                 <div class="card-body">
-                                  <h5 class="card-title">Stacy</h5>
-                                  <p class="card-text">Position</p>
+                                  <h5 class="card-title">Piyush Singh</h5>
+                                  <p class="card-text">SFDC Consultant</p>
                                 </div>
                             </div>
                         </div>
@@ -249,8 +275,301 @@
                             <div class="card team-card">
                                 <img class="card-img-top" src="./images/woman5.jpg" alt="Card image cap">
                                 <div class="card-body">
-                                  <h5 class="card-title">Camilla</h5>
-                                  <p class="card-text">Position</p>
+                                  <h5 class="card-title">Nickaylia Dixon</h5>
+                                  <p class="card-text">Office Manager</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div> 
+                  </div>
+                  <div class="carousel-item">
+                      <div class="row">
+                        <div class="card-box col-12 col-sm-6 col-md-2">
+                            <div class="card team-card">
+                                <img class="card-img-top" src="./images/woman5.jpg" alt="Card image cap">
+                                <div class="card-body">
+                                  <h5 class="card-title">Ashley Knowles</h5>
+                                  <p class="card-text">Senior Marketing Solutions Engineer</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="card-box col-12 col-sm-6 col-md-2">
+                            <div class="card team-card">
+                                <img class="card-img-top" src="./images/woman5.jpg" alt="Card image cap">
+                                <div class="card-body">
+                                  <h5 class="card-title">Lavanya Gunnu</h5>
+                                  <p class="card-text">Marketing Solutions Engineer</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="card-box col-12 col-sm-6 col-md-2">
+                            <div class="card team-card">
+                                <img class="card-img-top" src="./images/woman5.jpg" alt="Card image cap">
+                                <div class="card-body">
+                                  <h5 class="card-title">Vera Boatwalla</h5>
+                                  <p class="card-text">Consultant</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="card-box col-12 col-sm-6 col-md-2">
+                            <div class="card team-card">
+                                <img class="card-img-top" src="./images/woman5.jpg" alt="Card image cap">
+                                <div class="card-body">
+                                  <h5 class="card-title">Sabrina Lobo</h5>
+                                  <p class="card-text">Senior Marketing Solutions Engineer</p>
+                                </div>
+                            </div>
+                        </div>
+                      </div>
+                  </div>
+                  <div class="carousel-item">
+                        <div class="row">
+                            <div class="card-box col-12 col-sm-6 col-md-2">
+                                <div class="card team-card">
+                                    <img class="card-img-top" src="./images/woman5.jpg" alt="Card image cap">
+                                    <div class="card-body">
+                                      <h5 class="card-title">Trevor Brooks</h5>
+                                      <p class="card-text">Senior Marketing Solutions Engineer</p>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="card-box col-12 col-sm-6 col-md-2">
+                                <div class="card team-card">
+                                    <img class="card-img-top" src="./images/woman5.jpg" alt="Card image cap">
+                                    <div class="card-body">
+                                      <h5 class="card-title">Afreen Mukhtar</h5>
+                                      <p class="card-text">Marketing Solutions Engineer</p>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="card-box col-12 col-sm-6 col-md-2">
+                                <div class="card team-card">
+                                    <img class="card-img-top" src="./images/woman5.jpg" alt="Card image cap">
+                                    <div class="card-body">
+                                      <h5 class="card-title">Rain Liu</h5>
+                                      <p class="card-text">Marketing Solutions Engineer</p>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="card-box col-12 col-sm-6 col-md-2">
+                                <div class="card team-card">
+                                    <img class="card-img-top" src="./images/woman5.jpg" alt="Card image cap">
+                                    <div class="card-body">
+                                      <h5 class="card-title">Georgia Wolfe</h5>
+                                      <p class="card-text">Marketing Solutions Engineer</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                  </div>
+                  <div class="carousel-item">
+                    <div class="row">
+                        <div class="card-box col-12 col-sm-6 col-md-2">
+                            <div class="card team-card">
+                                <img class="card-img-top" src="./images/woman5.jpg" alt="Card image cap">
+                                <div class="card-body">
+                                  <h5 class="card-title">Iraj Khaliqi</h5>
+                                  <p class="card-text">Senior Marketing Solutions Engineer</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="card-box col-12 col-sm-6 col-md-2">
+                            <div class="card team-card">
+                                <img class="card-img-top" src="./images/woman5.jpg" alt="Card image cap">
+                                <div class="card-body">
+                                  <h5 class="card-title">Ahou Tabibzadeh</h5>
+                                  <p class="card-text">Senior Marketing Solutions Engineer</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="card-box col-12 col-sm-6 col-md-2">
+                            <div class="card team-card">
+                                <img class="card-img-top" src="./images/woman5.jpg" alt="Card image cap">
+                                <div class="card-body">
+                                  <h5 class="card-title">Ankit Kumar</h5>
+                                  <p class="card-text">Senior Marketing Solutions Engineer</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card-box col-12 col-sm-6 col-md-2">
+                            <div class="card team-card">
+                                <img class="card-img-top" src="./images/woman5.jpg" alt="Card image cap">
+                                <div class="card-body">
+                                  <h5 class="card-title">Dipal Patel</h5>
+                                  <p class="card-text">Marketing Solutions Engineer</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <div class="row">
+                        
+                        <div class="card-box col-12 col-sm-6 col-md-2">
+                            <div class="card team-card">
+                                <img class="card-img-top" src="./images/woman5.jpg" alt="Card image cap">
+                                <div class="card-body">
+                                  <h5 class="card-title">Mohit Nihalani</h5>
+                                  <p class="card-text">Marketing Solutions Engineer</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="card-box col-12 col-sm-6 col-md-2">
+                            <div class="card team-card">
+                                <img class="card-img-top" src="./images/woman5.jpg" alt="Card image cap">
+                                <div class="card-body">
+                                  <h5 class="card-title">Kaitlyn Nelson</h5>
+                                  <p class="card-text">Marketing Solutions Engineer</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="card-box col-12 col-sm-6 col-md-2">
+                            <div class="card team-card">
+                                <img class="card-img-top" src="./images/woman5.jpg" alt="Card image cap">
+                                <div class="card-body">
+                                  <h5 class="card-title">Dom Sirianni</h5>
+                                  <p class="card-text">Senior Marketing Solutions Engineer</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card-box col-12 col-sm-6 col-md-2">
+                            <div class="card team-card">
+                                <img class="card-img-top" src="./images/woman5.jpg" alt="Card image cap">
+                                <div class="card-body">
+                                  <h5 class="card-title">Kangel Rodrigues</h5>
+                                  <p class="card-text">Marketing Solutions Engineer</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <div class="row">
+                        
+                        <div class="card-box col-12 col-sm-6 col-md-2">
+                            <div class="card team-card">
+                                <img class="card-img-top" src="./images/woman5.jpg" alt="Card image cap">
+                                <div class="card-body">
+                                  <h5 class="card-title">Sarah Ogurlu</h5>
+                                  <p class="card-text">Marketing Solutions Engineer</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="card-box col-12 col-sm-6 col-md-2">
+                            <div class="card team-card">
+                                <img class="card-img-top" src="./images/woman5.jpg" alt="Card image cap">
+                                <div class="card-body">
+                                  <h5 class="card-title">Osama Ahmad</h5>
+                                  <p class="card-text">Senior Marketing Solutions Engineer</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="card-box col-12 col-sm-6 col-md-2">
+                            <div class="card team-card">
+                                <img class="card-img-top" src="./images/woman5.jpg" alt="Card image cap">
+                                <div class="card-body">
+                                  <h5 class="card-title">Sarah Paz</h5>
+                                  <p class="card-text">Designer and Front End Developer, Team Lead</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-box col-12 col-sm-6 col-md-2">
+                            <div class="card team-card">
+                                <img class="card-img-top" src="./images/woman5.jpg" alt="Card image cap">
+                                <div class="card-body">
+                                  <h5 class="card-title">Josh Han</h5>
+                                  <p class="card-text">Senior Designer and Front End Developer</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <div class="row">
+                        
+                        
+                        <div class="card-box col-12 col-sm-6 col-md-2">
+                            <div class="card team-card">
+                                <img class="card-img-top" src="./images/woman5.jpg" alt="Card image cap">
+                                <div class="card-body">
+                                  <h5 class="card-title">Aayush Choudhary</h5>
+                                  <p class="card-text">Designer and Front End Developer</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="card-box col-12 col-sm-6 col-md-2">
+                            <div class="card team-card">
+                                <img class="card-img-top" src="./images/woman5.jpg" alt="Card image cap">
+                                <div class="card-body">
+                                  <h5 class="card-title">Cassandra Lin</h5>
+                                  <p class="card-text">Designer and Front End Developer</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="card-box col-12 col-sm-6 col-md-2">
+                            <div class="card team-card">
+                                <img class="card-img-top" src="./images/woman5.jpg" alt="Card image cap">
+                                <div class="card-body">
+                                  <h5 class="card-title">Kemdi Ani</h5>
+                                  <p class="card-text">Designer and Front End Developer</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-box col-12 col-sm-6 col-md-2">
+                            <div class="card team-card">
+                                <img class="card-img-top" src="./images/woman5.jpg" alt="Card image cap">
+                                <div class="card-body">
+                                  <h5 class="card-title">Esteban Palacio</h5>
+                                  <p class="card-text">Designer and Front End Developer</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <div class="row">
+                        <div class="card-box col-12 col-sm-6 col-md-2">
+                            <div class="card team-card">
+                                <img class="card-img-top" src="./images/woman5.jpg" alt="Card image cap">
+                                <div class="card-body">
+                                  <h5 class="card-title">Angelica Ismailos</h5>
+                                  <p class="card-text">Consultant</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="card-box col-12 col-sm-6 col-md-2">
+                            <div class="card team-card">
+                                <img class="card-img-top" src="./images/woman5.jpg" alt="Card image cap">
+                                <div class="card-body">
+                                  <h5 class="card-title">Andrew ?</h5>
+                                  <p class="card-text">Book Keeper</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="card-box col-12 col-sm-6 col-md-2">
+                            <div class="card team-card">
+                                <img class="card-img-top" src="./images/woman5.jpg" alt="Card image cap">
+                                <div class="card-body">
+                                  <h5 class="card-title">Bryan ?</h5>
+                                  <p class="card-text">Book Keeper</p>
                                 </div>
                             </div>
                         </div>
@@ -328,12 +647,81 @@
             </div>
         </section>
 
-    
+<!-- Button trigger modal -->
+<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter">
+    Launch demo modal
+  </button>
+  
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          ...
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Save changes</button>
+        </div>
+      </div>
+    </div>
+  </div>    
 <!-- Bootstrap Script -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+
 <script>
-    const myCarousel = document.querySelector('#myCarousel');
-    const carousel = new bootstrap.Carousel(myCarousel, {interval: 10000, wrap: false});
-</script>
+    // Open the Modal
+    function openModal() {
+      document.getElementById("myModal").style.display = "block";
+    }
+    
+    // Close the Modal
+    function closeModal() {
+      document.getElementById("myModal").style.display = "none";
+    }
+    
+    var slideIndex = 1;
+    showSlides(slideIndex);
+    
+    // Next/previous controls
+    function plusSlides(n) {
+      showSlides(slideIndex += n);
+    }
+    
+    // Thumbnail image controls
+    function currentSlide(n) {
+      showSlides(slideIndex = n);
+    }
+    
+    function showSlides(n) {
+      var i;
+      var slides = document.getElementsByClassName("mySlides");
+      var dots = document.getElementsByClassName("demo");
+      if (n > slides.length) {slideIndex = 1}
+      if (n < 1) {slideIndex = slides.length}
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+      }
+      for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex-1].style.display = "flex";
+      dots[slideIndex-1].className += " active";
+    };
+
+    document.addEventListener("click", function(e) {
+        if (
+            e.target.className.closest(".modal")
+        ) {
+            closeModal();
+        }
+    });
+    </script>
 </body>
 </html>
