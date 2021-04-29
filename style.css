@@ -40,7 +40,7 @@ h2:after {
 }
 
 p {
-    font-size: 16px;
+    font-size: 14px;
 }
 
 h2, h5, p {
@@ -53,6 +53,10 @@ a {
 
 li {
     list-style-type:none !important; 
+}
+
+h5 {
+    font-size: 1.2rem !important;
 }
 
 /* ------------------------ Hero ------------------------ */
@@ -133,6 +137,10 @@ li {
     border: none !important;
 } 
 
+.card-text {
+    padding-right: 5px;
+}
+
 .card-body {
     padding: 0.75rem 0 !important;
     margin-left: 1.2rem !important;
@@ -155,7 +163,10 @@ li {
     border-top: 8px solid #54bcab !important;
     border-top-left-radius: 0 !important;
     border-top-right-radius: 0 !important;
+    min-height: 318px;
 }
+
+
 
 .team-card img {
     height: 160px;
