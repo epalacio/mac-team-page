@@ -38,8 +38,8 @@
             </div>
             <div class="row">
                 <div class="card-box col-12 col-sm-6 col-lg-2">
-                    <div class="card hoverJordan" onclick="openModal();currentSlide(1)" >
-                        <img class="card-img-top" src="./images/jordanH.jpg" alt="Profile Picture of Jordan Hellyer" >
+                    <div class="card">
+                        <img class="card-img-top hoverJordan" onclick="openModal();currentSlide(1)" src="./images/jordanH.jpg" alt="Profile Picture of Jordan Hellyer" >
                         <div class="card-body">
                           <h5 class="card-title">Jordan Hellyer</h5>
                           <p class="card-text">President</p>
@@ -56,8 +56,8 @@
                     </div> -->
                 </div>
                 <div class="card-box col-12 col-sm-6 col-lg-2">
-                    <div class="card hoverKate" onclick="openModal();currentSlide(2)" >
-                        <img class="card-img-top" src="./images/katelynR.jpg" alt="Profile Picture of Katelyn Reischke" style="cursor: pointer;">
+                    <div class="card">
+                        <img class="card-img-top hoverKate" onclick="openModal();currentSlide(2)" src="./images/katelynR.jpg" alt="Profile Picture of Katelyn Reischke" style="cursor: pointer;">
                         <div class="card-body">
                           <h5 class="card-title">Katelyn Reischke</h5>
                           <p class="card-text">VP Marketing & Operations</p>
@@ -66,8 +66,8 @@
                 </div>
 
                 <div class="card-box col-12 col-sm-6 col-lg-2">
-                    <div class="card hoverJosh" onclick="openModal();currentSlide(3)">
-                        <img class="card-img-top" src="./images/joshG.jpg" alt="Profile Pictue of Josh Gilchrist" style="cursor: pointer;">
+                    <div class="card">
+                        <img class="card-img-top hoverJosh" onclick="openModal();currentSlide(3)" src="./images/joshG.jpg" alt="Profile Pictue of Josh Gilchrist" style="cursor: pointer;">
                         <div class="card-body">
                           <h5 class="card-title">Josh Gilchrist</h5>
                           <p class="card-text">VP Sales & Strategy</p>
@@ -127,21 +127,21 @@
             <span class="close cursor button-close-modal" onclick="closeModal()">&times;</span>
             <div class="modal-content">
         
-            <div class="mySlides modalCard">
+            <div class="mySlides modalCard jordanModCard">
                 <img src="./images/jordanH.jpg" style="width:40%">
                 <h2 class="section-title">Jordan Hellyer</h2>
                 <h4>President</h4>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam lobortis consequat ex id maximus. Integer pulvinar vitae nisl ut interdum. Nullam sed risus sem. Duis vulputate varius magna vel pellentesque. Proin sed odio nisl. Fusce eu ultrices metus. Etiam posuere nec orci eu vestibulum.</p>
             </div>
         
-            <div class="mySlides modalCard">
+            <div class="mySlides modalCard katelynModCard">
                 <img src="./images/katelynR.jpg" style="width:40%">
                 <h2>Katelyn Reischke</h2>
                 <h4>VP Marketing & Operations</h4>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam lobortis consequat ex id maximus. Integer pulvinar vitae nisl ut interdum. Nullam sed risus sem. Duis vulputate varius magna vel pellentesque. Proin sed odio nisl. Fusce eu ultrices metus. Etiam posuere nec orci eu vestibulum.</p>
             </div>
         
-            <div class="mySlides modalCard">
+            <div class="mySlides modalCard joshModCard">
                 <img src="./images/joshG.jpg" style="width:40%">
                 <h2>Josh Gilchrist</h2>
                 <h4>VP Sales & Strategy</h4>
@@ -697,23 +697,27 @@
     <script>
       $(document).ready(function(){
         $(".hoverJordan").hover(function(){
+          event.stopPropagation();
           openModal();currentSlide(1);
         });
       });
 
       $(document).ready(function(){
         $(".hoverKate").hover(function(){
+          event.stopPropagation();
           openModal();currentSlide(2);
         });
       });
 
       $(document).ready(function(){
         $(".hoverJosh").hover(function(){
+          event.stopPropagation();
           openModal();currentSlide(3);
         });
       });
 
-      $( ".modalCard" ).mouseout(function() {
+      $( ".modalCard" ).mouseleave(function() {
+        event.stopPropagation();
         closeModal()
       });
     </script>
