@@ -425,7 +425,6 @@
                   </div>
                   <div class="carousel-item">
                     <div class="row">
- 
                         <div class="card-box col-12 col-sm-6 col-lg-2">
                             <div class="card team-card">
                                 <img class="card-img-top" src="./images/domS.jpg" alt="Card image cap">
@@ -610,16 +609,13 @@
                     </ul>
                 </div>
             </div>
-            </div>
-            
+            </div>    
             <div class="row" id="bottom">
             <div class="col-md-12">   
             
             <p>Marketing Automation Canada © 2021</p>
             <p><a href="tel:1-437-703-2699">+1-437-703-2699</a><br><a href="mailto:info@marketing-automation.ca">info@marketing-automation.ca</a></p>
-            <p>Unit 403, 2333 Dundas St. W., <br>Toronto, ON M6R 3A6</p>
-            
-            
+            <p>Unit 403, 2333 Dundas St. W., <br>Toronto, ON M6R 3A6</p> 
             </div>
             </div>
         </section>
@@ -652,75 +648,74 @@
 <!-- Bootstrap Script -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
 
-
-  <script>
-    // Open the Modal
-    function openModal() {
-      document.getElementById("myModal").style.display = "block";
+<script>
+  // Open the Modal
+  function openModal() {
+    document.getElementById("myModal").style.display = "block";
+  }
+  
+  // Close the Modal
+  function closeModal() {
+    document.getElementById("myModal").style.display = "none";
+  }
+  
+  var slideIndex = 1;
+  showSlides(slideIndex);
+  
+  // Next/previous controls
+  function plusSlides(n) {
+    showSlides(slideIndex += n);
+  }
+  
+  // Thumbnail image controls
+  function currentSlide(n) {
+    showSlides(slideIndex = n);
+  }
+  
+  function showSlides(n) {
+    var i;
+    var slides = document.getElementsByClassName("mySlides");
+    var dots = document.getElementsByClassName("demo");
+    if (n > slides.length) {slideIndex = 1}
+    if (n < 1) {slideIndex = slides.length}
+    for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
     }
-    
-    // Close the Modal
-    function closeModal() {
-      document.getElementById("myModal").style.display = "none";
+    for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
     }
-    
-    var slideIndex = 1;
-    showSlides(slideIndex);
-    
-    // Next/previous controls
-    function plusSlides(n) {
-      showSlides(slideIndex += n);
-    }
-    
-    // Thumbnail image controls
-    function currentSlide(n) {
-      showSlides(slideIndex = n);
-    }
-    
-    function showSlides(n) {
-      var i;
-      var slides = document.getElementsByClassName("mySlides");
-      var dots = document.getElementsByClassName("demo");
-      if (n > slides.length) {slideIndex = 1}
-      if (n < 1) {slideIndex = slides.length}
-      for (i = 0; i < slides.length; i++) {
-        slides[i].style.display = "none";
-      }
-      for (i = 0; i < dots.length; i++) {
-        dots[i].className = dots[i].className.replace(" active", "");
-      }
-      slides[slideIndex-1].style.display = "flex";
-      dots[slideIndex-1].className += " active";
-    };
-    </script>
+    slides[slideIndex-1].style.display = "flex";
+    dots[slideIndex-1].className += " active";
+  };
+</script>
 
-    <script>
-      $(document).ready(function(){
-        $(".hoverJordan").hover(function(){
-          event.stopPropagation();
-          openModal();currentSlide(1);
-        });
-      });
+<script>
+  $(document).ready(function(){
+    $(".hoverJordan").hover(function(){
+      event.stopPropagation();
+      openModal();currentSlide(1);
+    });
+  });
 
-      $(document).ready(function(){
-        $(".hoverKate").hover(function(){
-          event.stopPropagation();
-          openModal();currentSlide(2);
-        });
-      });
+  $(document).ready(function(){
+    $(".hoverKate").hover(function(){
+      event.stopPropagation();
+      openModal();currentSlide(2);
+    });
+  });
 
-      $(document).ready(function(){
-        $(".hoverJosh").hover(function(){
-          event.stopPropagation();
-          openModal();currentSlide(3);
-        });
-      });
+  $(document).ready(function(){
+    $(".hoverJosh").hover(function(){
+      event.stopPropagation();
+      openModal();currentSlide(3);
+    });
+  });
 
-      $( ".modalCard" ).mouseleave(function() {
-        event.stopPropagation();
-        closeModal()
-      });
-    </script>
+  $( ".modalCard" ).mouseleave(function() {
+    event.stopPropagation();
+    closeModal()
+  });
+</script>
 
     
 </body>
