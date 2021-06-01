@@ -39,7 +39,7 @@
             <div class="row">
                 <div class="card-box col-12 col-sm-6 col-lg-2">
                     <div class="card">
-                        <img class="card-img-top hoverJordan" onclick="openModal();currentSlide(1)" src="./images/jordanH.jpg" alt="Profile Picture of Jordan Hellyer" >
+                        <img class="card-img-top" src="./images/jordanH.jpg" alt="Profile Picture of Jordan Hellyer" style="cursor: pointer;" data-toggle="popover" title="Jordan Hellyer - President" data-bs-content="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam lobortis consequat ex id maximus. Integer pulvinar vitae nisl ut interdum. Nullam sed risus sem. Duis vulputate varius magna vel pellentesque. Proin sed odio nisl. Fusce eu ultrices metus. Etiam posuere nec orci eu vestibulum.">
                         <div class="card-body">
                           <h5 class="card-title">Jordan Hellyer</h5>
                           <p class="card-text">President</p>
@@ -57,7 +57,7 @@
                 </div>
                 <div class="card-box col-12 col-sm-6 col-lg-2">
                     <div class="card">
-                        <img class="card-img-top hoverKate" onclick="openModal();currentSlide(2)" src="./images/katelynR.jpg" alt="Profile Picture of Katelyn Reischke" style="cursor: pointer;">
+                        <img class="card-img-top" src="./images/katelynR.jpg" alt="Profile Picture of Katelyn Reischke" style="cursor: pointer;" data-toggle="popover" title="Katelyn Reischke - VP Marketing & Operations" data-bs-content="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam lobortis consequat ex id maximus. Integer pulvinar vitae nisl ut interdum. Nullam sed risus sem. Duis vulputate varius magna vel pellentesque. Proin sed odio nisl. Fusce eu ultrices metus. Etiam posuere nec orci eu vestibulum.">
                         <div class="card-body">
                           <h5 class="card-title">Katelyn Reischke</h5>
                           <p class="card-text">VP Marketing & Operations</p>
@@ -67,7 +67,7 @@
 
                 <div class="card-box col-12 col-sm-6 col-lg-2">
                     <div class="card">
-                        <img class="card-img-top hoverJosh" onclick="openModal();currentSlide(3)" src="./images/joshG.jpg" alt="Profile Pictue of Josh Gilchrist" style="cursor: pointer;">
+                        <img class="card-img-top" src="./images/joshG.jpg" alt="Profile Pictue of Josh Gilchrist" style="cursor: pointer;" data-toggle="popover" title="Josh Gilchrist - VP Sales & Strategy" data-bs-content="With over 15 years of experience in digital marketing, Josh G. has developed a vast array of skills, and a deep understanding of the market. He is infectiously passionate about MAC, and it shows in his dedication to our clients and team. He believes in extreme ownership, a team based approach, and the power of attention to detail. Josh is endlessly fascinated by all aspects of the marketing automation space, and is excited for advancements towards our AI driven future! ">
                         <div class="card-body">
                           <h5 class="card-title">Josh Gilchrist</h5>
                           <p class="card-text">VP Sales & Strategy</p>
@@ -121,35 +121,7 @@
 
         <!-- Leadership Lightbox -->
 
-        
-        <!-- The Modal/Lightbox -->
-        <div id="myModal" class="modal">
-            <span class="close cursor button-close-modal" onclick="closeModal()">&times;</span>
-            <div class="modal-content">
-        
-            <div class="mySlides modalCard jordanModCard">
-                <img src="./images/jordanH.jpg" style="width:40%">
-                <h2 class="section-title">Jordan Hellyer</h2>
-                <h4>President</h4>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam lobortis consequat ex id maximus. Integer pulvinar vitae nisl ut interdum. Nullam sed risus sem. Duis vulputate varius magna vel pellentesque. Proin sed odio nisl. Fusce eu ultrices metus. Etiam posuere nec orci eu vestibulum.</p>
-            </div>
-        
-            <div class="mySlides modalCard katelynModCard">
-                <img src="./images/katelynR.jpg" style="width:40%">
-                <h2>Katelyn Reischke</h2>
-                <h4>VP Marketing & Operations</h4>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam lobortis consequat ex id maximus. Integer pulvinar vitae nisl ut interdum. Nullam sed risus sem. Duis vulputate varius magna vel pellentesque. Proin sed odio nisl. Fusce eu ultrices metus. Etiam posuere nec orci eu vestibulum.</p>
-            </div>
-        
-            <div class="mySlides modalCard joshModCard">
-                <img src="./images/joshG.jpg" style="width:40%">
-                <h2>Josh Gilchrist</h2>
-                <h4>VP Sales & Strategy</h4>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam lobortis consequat ex id maximus. Integer pulvinar vitae nisl ut interdum. Nullam sed risus sem. Duis vulputate varius magna vel pellentesque. Proin sed odio nisl. Fusce eu ultrices metus. Etiam posuere nec orci eu vestibulum.</p>
-            </div>
-        </div>
-        </div>
-
+    
         <!-- Our Team -->
         <section class="container team">
             <div class="row">
@@ -601,72 +573,12 @@
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
 
 <script>
-  // Open the Modal
-  function openModal() {
-    document.getElementById("myModal").style.display = "block";
-  }
-  
-  // Close the Modal
-  function closeModal() {
-    document.getElementById("myModal").style.display = "none";
-  }
-  
-  var slideIndex = 1;
-  showSlides(slideIndex);
-  
-  // Next/previous controls
-  function plusSlides(n) {
-    showSlides(slideIndex += n);
-  }
-  
-  // Thumbnail image controls
-  function currentSlide(n) {
-    showSlides(slideIndex = n);
-  }
-  
-  function showSlides(n) {
-    var i;
-    var slides = document.getElementsByClassName("mySlides");
-    var dots = document.getElementsByClassName("demo");
-    if (n > slides.length) {slideIndex = 1}
-    if (n < 1) {slideIndex = slides.length}
-    for (i = 0; i < slides.length; i++) {
-      slides[i].style.display = "none";
-    }
-    for (i = 0; i < dots.length; i++) {
-      dots[i].className = dots[i].className.replace(" active", "");
-    }
-    slides[slideIndex-1].style.display = "flex";
-    dots[slideIndex-1].className += " active";
-  };
-</script>
-
-<script>
-  $(document).ready(function(){
-    $(".hoverJordan").hover(function(){
-      event.stopPropagation();
-      openModal();currentSlide(1);
-    });
-  });
-
-  $(document).ready(function(){
-    $(".hoverKate").hover(function(){
-      event.stopPropagation();
-      openModal();currentSlide(2);
-    });
-  });
-
-  $(document).ready(function(){
-    $(".hoverJosh").hover(function(){
-      event.stopPropagation();
-      openModal();currentSlide(3);
-    });
-  });
-
-  $( ".modalCard" ).mouseleave(function() {
-    event.stopPropagation();
-    closeModal()
-  });
+    $(document).ready(function() {
+   $('[data-toggle="popover"]').popover({
+      placement: 'bottom',
+      trigger: 'hover'
+   });
+});
 </script>
 
     

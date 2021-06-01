@@ -316,6 +316,18 @@ h5 {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   }
 
+
+  /* ------------------------ Pop over ------------------------ */
+
+  .popover-header {
+      color: var(--tealBlue);
+      font-weight: bold;
+  }
+
+  .popover-body {
+    background-color: var(--pastelOrange) !important;
+  }
+
 /* ------------------------ From main CSS File once live ------------------------ */
 #footer {
     background-color: #124559;
