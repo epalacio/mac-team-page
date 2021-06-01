@@ -322,6 +322,7 @@ h5 {
   .popover-header {
       color: var(--tealBlue);
       font-weight: bold;
+      background-color: #fff !important;
   }
 
   .popover-body {
