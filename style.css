@@ -9,7 +9,7 @@
 }
 
 * {
-    font-family: 'Work Sans', sans-serif;
+    font-family: 'Work Sans', sans-serif !important;
 }
 
 body {
@@ -59,13 +59,87 @@ h5 {
     font-size: 1.2rem !important;
 }
 
+
+/* ------------------------ Top Banner ------------------------ */
+.top-banner {
+    color: #fff;
+    text-align: center;
+    background-color: #54BCAB;
+    padding: 10px;
+}
+
+.top-banner a {
+    color: #fff !important;
+    text-decoration: underline !important;
+    font-family: 'Work Sans', sans-serif !important;
+}
+
+.navBarLogoDiv {
+    position: relative;
+    z-index: 300;
+}
+
+#topheader .navbar-nav > li > a {
+    padding: 30px 17px;
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 13px;
+    font-family: "Open Sans";
+    font-weight: bold;
+}
+
+@media (max-width: 1200px) {
+    #topheader .navbar-nav > li > a {
+        padding: 30px 12px !important;
+    }
+}
+
+
+@media (max-width: 576px) {
+#topheader .container {
+    width: auto !important;
+}
+
+.container {
+    width: auto !important;
+}
+}
+
+
+  
+
 /* ------------------------ NavBar ------------------------ */
 #topheader {
     background-color: #124559;
     width: 100%;
     height: 80px;
+    z-index: 9999;3
+    position: relative;
 }
 
+#topheader .navbar-inverse {
+    display: inline-block;
+    background-color: transparent;
+    border-color: transparent;
+    margin-bottom: 0px;
+    border: 0px;
+}
+
+#topheader .navbar-nav > li > a {
+    display: block;
+}
+
+.navbar {
+    padding-top: 0 !important;
+    background: #124559 !important;
+}
+
+.logo img {
+    width: auto;
+    height: 100%;
+}
+
+.navbar .nav-item:hover .dropdown-menu{ display: block; }
 
 /* ------------------------ Hero ------------------------ */
 .hero {
@@ -116,6 +190,7 @@ h5 {
     border: 2px solid var(--pastelOrange);
     opacity: 1 !important;
     max-width: 10rem;
+    background: var(--pastelOrange);
 }
 
 .section-title {
@@ -133,11 +208,10 @@ h5 {
 
 /* -------------- Main Cards -------------- */
 
-.card-box {
-    
+.card-box {  
     margin:20px auto;
-    min-width: 15rem;
 }
+
 .card {
     background-color: var(--pastelOrange) !important;
     margin: auto;
@@ -182,6 +256,7 @@ h5 {
     border-top-left-radius: 0 !important;
     border-top-right-radius: 0 !important;
     min-height: 340px;
+    min-width: 220px !important;
 }
 
 
